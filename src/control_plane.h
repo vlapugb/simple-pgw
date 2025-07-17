@@ -22,7 +22,7 @@ public:
 
     void delete_bearer(uint32_t dp_teid);
 
-    void add_apn(std::string apn_name, boost::asio::ip::address_v4 apn_gateway);
+    void add_apn(const std::string& apn_name, boost::asio::ip::address_v4 apn_gateway);
 
 private:
     std::unordered_map<uint32_t, std::shared_ptr<pdn_connection>> _pdns;

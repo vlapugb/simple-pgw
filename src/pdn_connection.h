@@ -30,7 +30,7 @@ private:
 
     pdn_connection(uint32_t cp_teid, boost::asio::ip::address_v4 apn_gw, boost::asio::ip::address_v4 ue_ip_addr);
 
-    void add_bearer(std::shared_ptr<bearer> bearer);
+    void add_bearer(const std::shared_ptr<bearer>& bearer);
     void remove_bearer(uint32_t dp_teid);
 
     boost::asio::ip::address_v4 _apn_gateway;
